@@ -9,15 +9,14 @@ require 'php/PHPMailer-5.2.28/src/SMTP.php';
 
 $mail = new PHPMailer(true);
 $mail_subject = 'Subject';
-$mail_to_email = '***@gmail.com'; // your email
+$mail_to_email = 'anirudhpillai79@gmail.com'; // your email
 $mail_to_name = 'Webmaster';
 
 try {
 
 	$mail_from_name = isset( $_POST['name'] ) ? $_POST['name'] : '';
 	$mail_from_email = isset( $_POST['email'] ) ? $_POST['email'] : '';
-	$mail_category = isset( $_POST['category'] ) ? $_POST['category'] : '';
-	$mail_budget = isset( $_POST['budget'] ) ? $_POST['budget'] : '';
+
 	$mail_message = isset( $_POST['message'] ) ? $_POST['message'] : '';
 
 	// Server settings
@@ -43,8 +42,7 @@ try {
 	$mail->Body = '
 		<strong>Name:</strong> ' . $mail_from_name . '<br>
 		<strong>Email:</strong> ' . $mail_from_email . '<br>
-		<strong>Category:</strong> ' . $mail_category . '<br>
-		<strong>Budget:</strong> ' . $mail_budget . '<br>
+	
 		<strong>Message:</strong> ' . $mail_message;
 
 	$mail->Send();
