@@ -9,7 +9,7 @@ require 'php/PHPMailer-5.2.28/src/SMTP.php';
 
 $mail = new PHPMailer(true);
 $mail_subject = 'Subject';
-$mail_to_email = 'anirudhpillai79@gmail.com'; // your email
+$mail_to_email = 'support@skill4real.com'; // your email
 $mail_to_name = 'Webmaster';
 
 try {
@@ -21,10 +21,10 @@ try {
 
 	// Server settings
 	$mail->isSMTP(); // Send using SMTP
-	$mail->Host = 'smtp.***.com'; // Set the SMTP server to send through
+	$mail->Host = ' smtp.zoho.in'; // Set the SMTP server to send through
 	$mail->SMTPAuth = true; // Enable SMTP authentication
-	$mail->Username = '***'; // SMTP username
-	$mail->Password = '***'; // SMTP password
+	$mail->Username = 'support@skill4real.com'; // SMTP username
+	$mail->Password = 'Support@123456'; // SMTP password
 	$mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
 	$mail->Port = 465; // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
 
