@@ -21,7 +21,7 @@ try {
 
 	// Server settings
 	$mail->isSMTP(); // Send using SMTP
-	$mail->Host = 'smtp.zoho.com'; // Set the SMTP server to send through
+	$mail->Host = 'smtppro.zoho.in'; // Set the SMTP server to send through
 	$mail->SMTPAuth = true; // Enable SMTP authentication
 	$mail->Username = 'support@skill4real.com'; // SMTP username
 	$mail->Password = 'Support@123456'; // SMTP password
